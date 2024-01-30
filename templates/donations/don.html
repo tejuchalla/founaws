@@ -1,0 +1,14 @@
+<html>
+<title>home</title>
+<head>
+<h1 align='center'>Foundataion Donations</h1>
+</head>
+<body>
+<h2>Recent Donations</h2>
+{% for d in det %}
+{{d.accnumber}}
+{{d.IFSC}}
+{{d.accholder}}
+{% endfor %}
+</body>
+</html>

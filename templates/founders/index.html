@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+<title>home</title>
+<head>
+</head>
+<body>
+<p align="center"><img src="{% static "logo/amma.jpg" %}" alt="noimg" class="center" width="200" height="200"/></p>
+<h1 align='center'>AmmA SERV Foundataion</h1>
+<h2 align='center'>Founder</h2>
+<a href="./do/dp"><p align="center"><img src="{% static "FCF/founder.jpg" %}" alt="noimg" class="center" width="100" height="100"/></p></a>
+<h3 align='center'>{{name}}</h3>
+
+<h2 align='center'>Co-Founders</h2>
+<h3 align="center">{{cf1}}  {{cf2}} & {{cf3}}</h3>
+
+<h1 align='center'>Account Details</h1>
+{% for d in asf %}
+{{d.accnumber}}
+{{d.IFSC}}
+{{d.accholder}}
+{% endfor %}
+
+</body>
+</html>
