@@ -82,6 +82,7 @@ DATABASES = {
         'NAME':'ammaserv',
         'USER':'ammaservuser',
         'PASSWORD':'Teju@143',
+        'HOST': '127.0.0.1',
     }
 }
 
