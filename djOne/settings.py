@@ -83,6 +83,9 @@ DATABASES = {
         'USER':'ammaservuser',
         'PASSWORD':'Teju@143',
         'HOST': '127.0.0.1',
+        'OPTIONS': {
+            'read_default_file': '/opt/lampp/etc/my.cnf',
+        }
     }
 }
 
